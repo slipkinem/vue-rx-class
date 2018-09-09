@@ -1,10 +1,19 @@
 {
   "name": "vue-rx-class",
-  "version": "1.0.0",
-  "description": "vue-rx class-based",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "binding helpers for vue-rx and use class-based",
+  "main": "./lib/bindings.js",
+  "module": "lib/bindings.js",
+  "typings": "lib/bindings.d.ts",
+  "homepage": "https://github.com/slipkinem/vue-rx-class",
+  "bugs": "https://github.com/slipkinem/vue-rx-class/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slipkinem/vue-rx-class.git"
+  },
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "tsc"
   },
   "keywords": [
     "vue",
@@ -13,5 +22,11 @@
     "vue-rx-class"
   ],
   "author": "slipkinem",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "vue-class-component": "^6.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  }
 }

@@ -1,8 +1,8 @@
 {
   "name": "vue-rx-class",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "binding helpers for vue-rx and use class-based",
-  "main": "./lib/bindings.js",
+  "main": "lib/bindings.umd.js",
   "module": "lib/bindings.js",
   "typings": "lib/bindings.d.ts",
   "homepage": "https://github.com/slipkinem/vue-rx-class",
@@ -11,9 +11,13 @@
     "type": "git",
     "url": "https://github.com/slipkinem/vue-rx-class.git"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "npm run test",
-    "build": "tsc"
+    "build": "tsc",
+    "build:umd": "rollup -c"
   },
   "keywords": [
     "vue",
@@ -27,6 +31,9 @@
     "vue-class-component": "^6.2.0"
   },
   "devDependencies": {
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-typescript": "^0.8.1"
   }
 }

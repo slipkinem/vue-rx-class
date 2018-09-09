@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "umd",
+    "module": "es2015",
     "moduleResolution": "node",
     "lib": [
       "dom",
@@ -14,7 +14,10 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "declaration": true
+    "declaration": true,
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
   },
-  "include": ["./bindings.ts"]
+  "include": ["./src/*.ts"]
 }

@@ -1,0 +1,17 @@
+{
+  "name": "vue-rx-class",
+  "version": "1.0.0",
+  "description": "vue-rx class-based",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "vue",
+    "rxjs",
+    "vue-rx",
+    "vue-rx-class"
+  ],
+  "author": "slipkinem",
+  "license": "ISC"
+}
